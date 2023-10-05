@@ -1,4 +1,29 @@
 {
+  "name": "todayistoday",
+  "version": "1.0.0",
+  "description": "A stoic daily calendar",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gvonkoss/todayistoday.git"
+  },
+  "keywords": [
+    "calendar",
+    "stoic",
+    "daily"
+  ],
+  "author": "Gabrielle von Koss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gvonkoss/todayistoday/issues"
+  },
+  "homepage": "https://github.com/gvonkoss/todayistoday#readme",
+  "dependencies": {
+    "parcel": "^2.9.3"
+  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3"
   }
