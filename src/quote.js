@@ -1,6 +1,5 @@
 import data from '../data/quotes.json';
-
-const random = (max) => Math.floor(Math.random() * max);
+import { random } from './utils';
 
 const getQuote = () => {
   const { stoic, quotes } = data[random(data.length)];
