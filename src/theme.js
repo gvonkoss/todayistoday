@@ -5,16 +5,20 @@ const color = colors[random(colors.length)];
 
 const setDarkMode = (on) => {
   const styles = document.documentElement.style;
-
-  if (on) {
-    styles.setProperty('--text-color', color);
-    styles.setProperty('--card-color', 'black');
-    styles.setProperty('--background-color', 'black');
-  } else {
-    styles.setProperty('--text-color', 'black');
-    styles.setProperty('--card-color', color);
-    styles.setProperty('--background-color', 'beige');
-  }
+  const state = document.getElementById('switch');
+  setTimeout(() => {
+    if (on) {
+      state.innerText = 'lights on';
+      styles.setProperty('--text-color', color);
+      styles.setProperty('--card-color', 'black');
+      styles.setProperty('--background-color', 'black');
+    } else {
+      state.innerText = 'lights off';
+      styles.setProperty('--text-color', 'black');
+      styles.setProperty('--card-color', color);
+      styles.setProperty('--background-color', 'beige');
+    }
+  }, 450);
 };
 
 export const setTheme = () => {

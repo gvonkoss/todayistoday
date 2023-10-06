@@ -1,10 +1,21 @@
 @use 'sass:color';
 
 label {
+  position: relative;
   grid-column: 3;
-  grid-row: 2;
+  grid-row: 1;
   align-self: center;
   justify-self: center;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+
+  span {
+    position: absolute;
+    left: 9.5em;
+    color: var(--text-color);
+    // font-style: italic;
+  }
 }
 
 input[type='checkbox'] {
@@ -13,48 +24,47 @@ input[type='checkbox'] {
   appearance: none;
   -webkit-tap-highlight-color: transparent;
 
-  box-shadow: inset 0 0 0 1px var(--text-color);
-  cursor: pointer;
-  position: relative;
-  width: 1.75em;
-  height: 1.75em;
-  background-color: var(--card-color);
+  &:focus {
+    outline: 0;
+  }
+
+  &:focus-visible:after {
+    outline: 2px solid var(--text-color);
+    outline-offset: 1px;
+  }
 
   &:before,
   &:after {
     content: '';
     position: absolute;
-    border: 3px solid transparent;
-  }
-
-  &:before {
-    width: 0;
-    height: 100%;
-    right: 100%;
-    top: 0;
-    border-right-color: var(--text-color);
-    border-bottom-width: 0;
+    transition-property: top, bottom;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(1, -0.8, 0.23, 1.48);
   }
 
   &:after {
-    width: 100%;
-    height: 0;
-    top: 100%;
-    right: 0;
-    border-top-color: var(--text-color);
-    border-left-width: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    position: absolute;
+    top: 9.5em;
+    left: 10.2em;
+  }
+
+  &:before {
+    border-left: 3px dotted var(--text-color);
+    top: 0;
+    bottom: 4em;
+    left: 10.6em;
   }
 
   &:checked {
-    transform: translate(-3px, 3px);
-    background-color: var(--text-color);
-    border: var(--border);
-    border-color: var(--text-color);
-    box-shadow: inset -3px 3px 0 0 var(--background-color);
-
-    &:after,
+    &:after {
+      top: 11.5em;
+    }
     &:before {
-      display: none;
+      bottom: 2em;
     }
   }
 }
