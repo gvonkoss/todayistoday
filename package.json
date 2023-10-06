@@ -2,9 +2,10 @@
   "name": "todayistoday",
   "version": "1.0.0",
   "description": "A stoic daily calendar",
-  "main": "index.js",
+  "source": "./index.html",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
