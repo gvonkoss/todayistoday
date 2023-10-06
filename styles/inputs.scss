@@ -2,7 +2,7 @@
 
 label {
   position: relative;
-  grid-column: 3;
+  grid-column: 2;
   grid-row: 1;
   align-self: center;
   justify-self: center;
@@ -12,9 +12,12 @@ label {
 
   span {
     position: absolute;
-    left: 9.5em;
+    left: 115px;
     color: var(--text-color);
-    // font-style: italic;
+  }
+
+  @media screen and (min-width: 380px) {
+    grid-column: 3;
   }
 }
 
@@ -40,31 +43,27 @@ input[type='checkbox'] {
     transition-property: top, bottom;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(1, -0.8, 0.23, 1.48);
+    bottom: 100px;
   }
 
   &:after {
-    width: 1em;
-    height: 1em;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: var(--text-color);
-    position: absolute;
-    top: 9.5em;
-    left: 10.2em;
+    left: 100px;
   }
 
   &:before {
-    border-left: 3px dotted var(--text-color);
+    border-left: 2px dotted var(--text-color);
     top: 0;
-    bottom: 4em;
-    left: 10.6em;
+    left: 105px;
   }
 
   &:checked {
-    &:after {
-      top: 11.5em;
-    }
+    &:after,
     &:before {
-      bottom: 2em;
+      bottom: 60px;
     }
   }
 }
