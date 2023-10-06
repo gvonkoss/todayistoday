@@ -11,18 +11,18 @@ div#card {
   padding: 1em;
   width: 100%;
 
-  &::after {
-    content: 'today is today.';
+  @media screen and (min-width: 380px) {
+    height: 65ch;
+    width: 65ch;
+  }
+
+  &:after {
+    content: 'today is today';
     position: absolute;
     padding: 1.05em 1em;
     bottom: 0;
     right: 0;
     border-left: 1px solid var(--text-color);
     opacity: 0.8;
-  }
-
-  @media screen and (min-width: 380px) {
-    height: 65ch;
-    width: 65ch;
   }
 }
