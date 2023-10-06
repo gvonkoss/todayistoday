@@ -1,7 +1,7 @@
-import { buildQuote, buildDate, setDateColor } from './src';
+import { buildQuote, buildDate, setTheme } from './src';
 
 (() => {
-  setDateColor();
+  setTheme();
   buildDate();
   buildQuote();
 })();

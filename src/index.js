@@ -1,3 +1,3 @@
 export * from './date';
-export * from './colors';
+export * from './theme';
 export * from './quote';
