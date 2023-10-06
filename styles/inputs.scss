@@ -1,0 +1,43 @@
+label {
+  position: absolute;
+  right: -2em;
+  bottom: 50%;
+}
+
+.toggle,
+.toggle:before {
+  transition-property: background-color, transform, visibility;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in;
+}
+
+.toggle:before {
+  display: block;
+  position: absolute;
+  background: var(--background-color);
+  content: '';
+  width: 1em;
+  height: 1em;
+  border: 1px solid var(--text-color);
+  box-sizing: border-box;
+}
+
+.toggle:checked {
+  background-color: var(--text-color);
+
+  &:before {
+    transform: translateY(2em);
+  }
+}
+
+.toggle {
+  border: var(--border);
+  cursor: pointer;
+  position: relative;
+  width: 1em;
+  height: 3em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}

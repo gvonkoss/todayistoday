@@ -7,15 +7,26 @@
   </head>
   <body>
     <main>
-      <blockquote></blockquote>
-      <time>
-        <span id="day"></span>
-        <span class="date">
-          <span id="weekday"></span>
-          <span id="month"></span>
-          <span id="year"></span>
-        </span>
-      </time>
+      <div id="card">
+        <blockquote></blockquote>
+        <time>
+          <span id="day"></span>
+          <span class="date">
+            <span id="weekday"></span>
+            <span id="month"></span>
+            <span id="year"></span>
+          </span>
+        </time>
+      </div>
+      <label
+        ><input
+          id="toggle"
+          class="toggle"
+          type="checkbox"
+          role="switch"
+          name="toggle"
+          value="on"
+      /></label>
     </main>
     <script src="./index.js" type="module"></script>
   </body>
