@@ -1,9 +1,10 @@
 @use 'sass:color';
 
 label {
-  position: absolute;
-  right: -2em;
-  bottom: 50%;
+  grid-column: 3;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
 }
 
 input[type='checkbox'] {

@@ -1,11 +1,12 @@
 @use './styles/inputs';
 @use './styles/date';
 @use './styles/quote';
+@use './styles/card';
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
 :root {
-  --border: 1px solid currentColor;
+  --border: 1px solid var(--text-color);
   --text-color: black;
   --background-colour: beige;
   --card-colour: springgreen;
@@ -20,40 +21,19 @@
 body {
   min-height: 100vh;
   font-family: 'DM Serif Display';
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--background-color);
+  overflow: hidden;
 }
 
 main {
   position: relative;
-}
-
-div#card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border: var(--border);
-  background-color: var(--card-color);
-  color: var(--text-color);
-  padding: 1em;
-  margin: 0 1em;
-  height: calc(100vw - 2em);
-  width: 100%;
-
-  &::after {
-    content: 'today is today.';
-    position: absolute;
-    padding: 1.05em 1em;
-    bottom: 0;
-    right: 0;
-    border-left: 1px solid var(--text-color);
-    opacity: 0.8;
-  }
-
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
   @media screen and (min-width: 380px) {
-    height: 65ch;
-    width: 65ch;
+    grid-template-columns: 1fr 65ch 1fr;
+    grid-template-rows: 1fr 65ch 1fr;
   }
 }
