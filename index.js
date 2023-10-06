@@ -1,7 +1,8 @@
-import { buildQuote, buildDate, setTheme } from './src';
+import { buildQuote, buildDate, setTheme, refreshQuote } from './src';
 
 (() => {
   setTheme();
   buildDate();
+  refreshQuote();
   buildQuote();
 })();

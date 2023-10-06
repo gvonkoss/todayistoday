@@ -12,13 +12,28 @@ const getQuote = () => {
 
 export const buildQuote = () => {
   const { stoic, quote } = getQuote();
-  const paragraph = document.createElement('p');
-  const footer = document.createElement('footer');
   paragraph.innerText = quote;
   footer.innerText = `– ${stoic}`;
-
-  const blockquote = document.querySelector('blockquote');
-
-  blockquote.appendChild(paragraph);
-  blockquote.appendChild(footer);
 };
+
+export const refreshQuote = () => {
+  const button = document.getElementById('refresh');
+  const span = document.getElementById('more');
+
+  button.addEventListener('click', () => {
+    button.classList.add('refresh');
+    button.setAttribute('disabled', '');
+
+    span.innerText = `${span.innerText}!`;
+
+    buildQuote();
+
+    setTimeout(() => {
+      button.classList.remove('refresh');
+      button.removeAttribute('disabled');
+    }, 500);
+  });
+};
+
+const paragraph = document.getElementById('quote');
+const footer = document.createElement('stoic');
