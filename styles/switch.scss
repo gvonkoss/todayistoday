@@ -1,3 +1,4 @@
+@use 'utils' as media;
 @use 'sass:color';
 
 label {
@@ -16,7 +17,7 @@ label {
     color: var(--text-color);
   }
 
-  @media screen and (min-width: 380px) {
+  @include media.desktop {
     grid-column: 3;
   }
 }

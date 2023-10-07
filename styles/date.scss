@@ -1,11 +1,12 @@
+@use 'utils' as media;
+
 time {
   display: flex;
   align-items: center;
   gap: 1em;
   border-top: var(--border);
-  padding-top: 0.3em;
 
-  @media screen and (min-width: 380px) {
+  @include media.desktop {
     font-size: 1.3em;
   }
 

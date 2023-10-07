@@ -29,7 +29,7 @@ main {
   grid-template-rows: 1fr 40ch 1fr;
   height: 100%;
 
-  @media screen and (min-width: 380px) {
+  @include styles.media-desktop {
     grid-template-columns: auto 65ch auto;
     grid-template-rows: 1fr 65ch 1fr;
   }

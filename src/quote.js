@@ -36,4 +36,4 @@ export const refreshQuote = () => {
 };
 
 const paragraph = document.getElementById('quote');
-const footer = document.createElement('stoic');
+const footer = document.getElementById('stoic');
