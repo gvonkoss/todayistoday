@@ -1,7 +1,7 @@
 [
   {
     "stoic": "Marcus Aurelius",
-    "bio": "Marcus Aurelius is one of the most famous stoic philosophers, and one of the most powerful people in the world while he was alive. He was the emperor of ancient Rome, and would often write down his thoughts in his now famous journal we now call Meditations. This is one of my favorite books of all time, and an interesting look into the mind of Marcus. His journal was never meant to be published, so what you see here is pure honesty that ended up including some of the greatest stoic quotes. ",
+    "bio": "Marcus Aurelius is one of the most famous stoic philosophers, and one of the most powerful people in the world while he was alive. He was the emperor of ancient Rome, and would often write down his thoughts in his now famous journal we now call Meditations.",
     "quotes": [
       "The best answer to anger is silence.",
       "The more we value things outside our control, the less control we have.",
@@ -22,12 +22,17 @@
       "I cannot escape death, but at least I can escape the fear of it.",
       "How trivial the things we want so passionately are.",
       "Settle on the type of person you want to be and stick to it, whether alone or in company.",
-      "Consider at what price you sell your integrity, but please, for God’s sake, don’t sell it cheap."
+      "Consider at what price you sell your integrity, but please, for God’s sake, don’t sell it cheap.",
+      "It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own.",
+      "If it is not right, do not do it, if it is not true, do not say it.",
+      "The best revenge is not to be like your enemy.",
+      "External things are not the problem. It’s your assessment of them. Which you can erase right now.",
+      "Choose not to be harmed — and you won’t feel harmed. Don’t feel harmed — and you haven’t been."
     ]
   },
   {
     "stoic": "Seneca",
-    "bio": "Seneca (4 BC—AD 65) was another prominent stoic philosopher in Rome, as had a unique position as the advisor to newly appointment Emperor Nero in 54. His book called Letters from a Stoic is one of my favorite books on stoicism, and is full of wisdom and lessons about morality. ",
+    "bio": "Seneca (4 BC—AD 65) was another prominent stoic philosopher in Rome, as had a unique position as the advisor to newly appointment Emperor Nero in 54. His book is called Letters from a Stoic.",
     "quotes": [
       "Luck is what happens when preparation meets opportunity.",
       "We suffer more often in imagination than in reality.",
@@ -53,12 +58,14 @@
       "For many men, the acquisition of wealth does not end their troubles, it only changes them.",
       "The greatest remedy for anger is delay.",
       "An age builds up cities, an hour destroys them. In a moment the ashes are made, but a forest is a long time growing.",
-      "There is no person so severely punished, as those who subject themselves to the whip of their own remorse."
+      "There is no person so severely punished, as those who subject themselves to the whip of their own remorse.",
+      "How does it help…to make troubles heavier by bemoaning them?",
+      "You are your choices."
     ]
   },
   {
     "stoic": "Epictetus",
-    "bio": "Epictetus (AD 50—135) was born a slave and lived in Rome until his banishment. His teachings were documented and published by one of his students named Arrian in two books - Discourses, and Enchiridion. ",
+    "bio": "Epictetus (AD 50—135) was born a slave and lived in Rome until his banishment. His teachings were documented and published by one of his students named Arrian in two books - Discourses, and Enchiridion.",
     "quotes": [
       "We have two ears and one mouth so that we can listen twice as much as we speak.",
       "No man is free who is not master of himself.",
@@ -77,24 +84,30 @@
     "stoic": "Zeno",
     "bio": "While Zeno (334—262 BC) isn't quite as popular as Marcus Aurelius or Seneca (mostly to the lack of available teachings), he was the founder of the stoic school of philosophy in Athens around 300 BC. What did remain of his teachings were passed down by one of his students named Diogenes.",
     "quotes": [
-      "All the good are friends of one another.",
       "No loss should be more regrettable to us than losing our time, for it’s irretrievable.",
       "Extravagance is its own destroyer.",
       "Man conquers the world by conquering himself.",
-      "Steel your sensibilities, so that life shall hurt you as little as possible.",
       "Better to trip with the feet than with the tongue",
       "A bad feeling is a commotion of the mind repugnant to reason, and against nature."
     ]
   },
   {
-    "stoic": "Musoniuis Rufus",
-    "bio": "Musoniuis Rufus was a stoic philosopher in Rome around the 1st century AD. He is most famous for being the primary teacher for Epictetus, as well as being another stoic philosopher that was exiled from Rome by the Emperor Nero in 65 AD. ",
+    "stoic": "Viktor Frankl",
+    "bio": "",
     "quotes": [
-      "We begin to lose our hesitation to do immoral things when we lose our hesitation to speak of them.",
-      "Humanity must seek what is NOT simple and obvious using the simple and obvious.",
-      "Since every man dies, it is better to die with distinction than to live long.",
-      "Only by exhibiting actions in harmony with the sound words which he has received will anyone be helped by philosophy.",
-      "Thus whoever destroys human marriage destroys the home, the city-the whole human race."
+      "Our greatest freedom is the freedom to choose our attitude.",
+      "When we are no longer able to change a situation, we are challenged to change ourselves."
+    ]
+  },
+  {
+    "stoic": "William James",
+    "bio": "",
+    "quotes": [
+      "Thoughts become perception, perception becomes reality. Alter your thoughts, alter your reality.",
+      "The greatest weapon against stress is our ability to choose on thought over another.",
+      "Believe that life is worth living and your belief will help create the fact.",
+      "If you can change your mind, you can change your life.",
+      "You may not get everything you dream about, but you will never get anything you don't dream about."
     ]
   }
 ]
