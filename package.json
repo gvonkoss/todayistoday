@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/gvonkoss/todayistoday#readme",
   "dependencies": {
+    "dom-to-image": "^2.6.0",
     "parcel": "^2.9.3"
   },
   "devDependencies": {

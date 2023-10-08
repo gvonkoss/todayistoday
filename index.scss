@@ -1,12 +1,11 @@
 @use './styles';
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200&family=DM+Serif+Display&display=swap');
-
 :root {
   --border: 1px solid var(--text-color);
   --text-color: black;
   --background-colour: beige;
   --card-colour: springgreen;
+  --flash-color: springgreen;
 }
 
 * {

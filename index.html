@@ -6,6 +6,18 @@
     <link rel="stylesheet" href="./index.scss" />
   </head>
   <body>
+        <label>
+      <span id="switch">lights off</span>
+      <input
+        id="toggle"
+        class="toggle"
+        type="checkbox"
+        role="switch"
+        name="toggle"
+        value="on"
+      />
+    </label>
+    <button id="snapshot">download</button>
     <main>
       <div id="card">
         <blockquote>
@@ -22,17 +34,8 @@
         </time>
       </div>
     </main>
-    <label>
-      <span id="switch">lights off</span>
-      <input
-        id="toggle"
-        class="toggle"
-        type="checkbox"
-        role="switch"
-        name="toggle"
-        value="on"
-      />
-    </label>
+    <div id="flash"/></div>
+
     <button id="refresh">Refresh</button>
     <footer>
       <!-- <p>

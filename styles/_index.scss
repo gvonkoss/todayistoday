@@ -1,8 +1,10 @@
-@forward './card.scss';
-@forward './date.scss';
-@forward './footer.scss';
-@forward './grid.scss';
-@forward './quote.scss';
-@forward './refresh.scss';
-@forward './switch.scss';
-@forward './utils.scss' as media-*;
+@forward './card';
+@forward './date';
+@forward './fonts';
+@forward './footer';
+@forward './grid';
+@forward './quote';
+@forward './refresh';
+@forward './snapshot';
+@forward './switch';
+@forward './utils' as media-*;

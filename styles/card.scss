@@ -30,3 +30,8 @@ div#card {
     }
   }
 }
+
+div#flash {
+  grid-area: content;
+  background-color: var(--flash-color);
+}

@@ -1,6 +1,6 @@
-button {
-  grid-area: controls;
-  align-self: flex-end;
+button#refresh {
+  grid-area: footer;
+  align-self: flex-start;
   position: relative;
   cursor: pointer;
   color: transparent;
