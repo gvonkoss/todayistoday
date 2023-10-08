@@ -27,10 +27,8 @@ const setDarkMode = (on) => {
 export const setTheme = () => {
   const [toggle] = document.getElementsByTagName('input');
 
-  toggle.addEventListener(
-    'change',
-    ({ target }) =>
-      console.log('checked', target.checked) || setDarkMode(target.checked)
+  toggle.addEventListener('change', ({ target }) =>
+    setDarkMode(target.checked)
   );
 
   if (window.matchMedia) {
