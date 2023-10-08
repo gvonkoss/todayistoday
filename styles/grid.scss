@@ -3,8 +3,7 @@
 body {
   display: grid;
   grid-template-areas:
-    '. switch .'
-    '. refresh .'
+    '. controls .'
     '. content .'
     '. footer .';
   grid-template-columns: 1fr 40ch 1fr;
@@ -13,7 +12,7 @@ body {
 
   @include media.desktop {
     grid-template-areas:
-      '. refresh switch'
+      '. controls .'
       '. content .'
       '. footer .';
     grid-template-columns: 1fr 65ch 1fr;

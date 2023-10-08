@@ -2,17 +2,15 @@
 @use 'sass:color';
 
 label {
-  position: relative;
-  grid-area: switch;
-  cursor: pointer;
+  grid-area: controls;
   justify-self: flex-end;
 
-  @include media.desktop {
-    grid-area: refresh;
-  }
+  position: relative;
+  cursor: pointer;
 
   span {
     font-family: 'DM Sans', sans-serif;
+    padding-right: 0.5em;
     color: var(--text-color);
   }
 }
@@ -47,12 +45,13 @@ input[type='checkbox'] {
     height: 12px;
     border-radius: 50%;
     background-color: var(--text-color);
+    right: 0;
   }
 
   &:before {
     border-right: 2px dotted var(--text-color);
     top: 0;
-    right: -7px;
+    right: 5px;
   }
 
   &:checked {
