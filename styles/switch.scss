@@ -4,13 +4,11 @@
 label {
   grid-area: controls;
   justify-self: flex-end;
-
-  position: relative;
   cursor: pointer;
+  display: flex;
 
   span {
     font-family: 'DM Sans', sans-serif;
-    padding-right: 0.5em;
     color: var(--text-color);
   }
 }
@@ -20,6 +18,7 @@ input[type='checkbox'] {
   -moz-appearance: none;
   appearance: none;
   -webkit-tap-highlight-color: transparent;
+  position: relative;
 
   &:focus {
     outline: 0;
@@ -45,13 +44,12 @@ input[type='checkbox'] {
     height: 12px;
     border-radius: 50%;
     background-color: var(--text-color);
-    right: 0;
   }
 
   &:before {
-    border-right: 2px dotted var(--text-color);
     top: 0;
-    right: 5px;
+    right: -7px;
+    border-right: 2px dotted var(--text-color);
   }
 
   &:checked {

@@ -22,9 +22,6 @@ div#card {
   }
 
   @include media.desktop {
-    height: 65ch;
-    width: 65ch;
-
     &:after {
       padding: 0.75em 1em;
     }
