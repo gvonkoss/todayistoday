@@ -1,6 +1,6 @@
 @use './styles';
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200&family=DM+Serif+Display&display=swap');
 
 :root {
   --border: 1px solid var(--text-color);
@@ -20,17 +20,8 @@ body {
   font-family: 'DM Serif Display';
   background-color: var(--background-color);
   overflow: hidden;
-}
 
-main {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 40ch 1fr;
-  grid-template-rows: 1fr 40ch 1fr;
-  height: 100%;
-
-  @include styles.media-desktop {
-    grid-template-columns: auto 65ch auto;
-    grid-template-rows: 1fr 65ch 1fr;
+  main {
+    grid-area: content;
   }
 }

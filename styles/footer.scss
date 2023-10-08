@@ -1,0 +1,22 @@
+body > footer {
+  grid-area: footer;
+  align-self: flex-end;
+
+  p {
+    font-family: 'DM Sans';
+    text-align: left;
+    color: var(--text-color);
+    padding: 0.8em 1em;
+    opacity: 0.7;
+
+    a {
+      &:visited {
+        color: var(--text-color);
+      }
+
+      &:hover {
+        text-decoration-style: wavy;
+      }
+    }
+  }
+}

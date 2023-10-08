@@ -18,13 +18,10 @@ export const buildQuote = () => {
 
 export const refreshQuote = () => {
   const button = document.getElementById('refresh');
-  const span = document.getElementById('more');
 
   button.addEventListener('click', () => {
     button.classList.add('refresh');
     button.setAttribute('disabled', '');
-
-    span.innerText = `${span.innerText}!`;
 
     buildQuote();
 
