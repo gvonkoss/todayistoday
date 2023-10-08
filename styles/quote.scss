@@ -3,7 +3,7 @@
 blockquote {
   display: flex;
   flex-direction: column;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-bottom: 0.5em;
   height: 100%;
   overflow: scroll;
@@ -20,7 +20,7 @@ blockquote {
   }
 
   @include media.desktop {
-    font-size: 2.4em;
+    font-size: 2.3em;
     overflow: unset;
 
     footer {

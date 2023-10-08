@@ -4,20 +4,17 @@
 label {
   position: relative;
   grid-area: switch;
-
-  align-self: center;
-  justify-self: center;
   cursor: pointer;
-  width: 100%;
-  height: 100%;
+  justify-self: flex-end;
 
-  span {
-    position: absolute;
-    left: 115px;
-    color: var(--text-color);
+  @include media.desktop {
+    grid-area: refresh;
   }
 
-  opacity: 0.7;
+  span {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text-color);
+  }
 }
 
 input[type='checkbox'] {
@@ -42,7 +39,7 @@ input[type='checkbox'] {
     transition-property: top, bottom;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(1, -0.8, 0.23, 1.48);
-    bottom: 100px;
+    bottom: 60px;
   }
 
   &:after {
@@ -50,19 +47,18 @@ input[type='checkbox'] {
     height: 12px;
     border-radius: 50%;
     background-color: var(--text-color);
-    left: 100px;
   }
 
   &:before {
-    border-left: 2px dotted var(--text-color);
+    border-right: 2px dotted var(--text-color);
     top: 0;
-    left: 105px;
+    right: -7px;
   }
 
   &:checked {
     &:after,
     &:before {
-      bottom: 60px;
+      bottom: 40px;
     }
   }
 }

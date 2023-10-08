@@ -1,4 +1,6 @@
 button {
+  --border: 2px solid var(--text-color);
+
   grid-area: refresh;
   align-self: flex-end;
   margin: 0 1em;
@@ -24,8 +26,8 @@ button {
     border: var(--border);
     border-left-width: 0;
     border-bottom-width: 0;
-    top: 5px;
-    left: -5px;
+    top: 4px;
+    left: -6px;
   }
 
   &.refresh {

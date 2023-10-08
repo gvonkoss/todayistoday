@@ -15,7 +15,7 @@ body {
     grid-template-areas:
       '. refresh switch'
       '. content .'
-      '. . footer';
+      '. footer .';
     grid-template-columns: 1fr 65ch 1fr;
     grid-template-rows: 1fr 65ch 1fr;
   }
