@@ -1,7 +1,7 @@
 export const buildDate = () => {
   const today = new Date();
-  const locale = navigator.language;
-
+  // const locale = navigator.language; // not mvp!
+  const locale = 'en-GB';
   const time = document.querySelector('time');
   time.setAttribute('datetime', today.toISOString());
 
