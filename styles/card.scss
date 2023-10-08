@@ -1,0 +1,37 @@
+@use 'utils' as media;
+
+div#card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+  background-color: var(--card-color);
+  color: var(--text-color);
+  padding: 1em 1em 0.4em;
+  width: 100%;
+  height: 100%;
+
+  &:after {
+    content: 'today is today';
+    position: absolute;
+    padding: 0.5em 1em;
+    bottom: 0;
+    right: 0;
+    border-left: 1px solid var(--text-color);
+    opacity: 0.8;
+  }
+
+  @include media.desktop {
+    height: 65ch;
+    width: 65ch;
+
+    &:after {
+      padding: 0.75em 1em;
+    }
+  }
+}
+
+div#flash {
+  grid-area: content;
+  background-color: var(--flash-color);
+}

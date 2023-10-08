@@ -1,0 +1,21 @@
+@use 'utils' as media;
+
+body {
+  display: grid;
+  grid-template-areas:
+    '. controls .'
+    '. content .'
+    '. footer .';
+  grid-template-columns: 1fr 40ch 1fr;
+  grid-template-rows: minmax(5ch, 20ch) auto 40ch 1fr;
+  gap: 1em;
+
+  @include media.desktop {
+    grid-template-areas:
+      '. controls .'
+      '. content .'
+      '. footer .';
+    grid-template-columns: 1fr 65ch 1fr;
+    grid-template-rows: 1fr 65ch 1fr;
+  }
+}

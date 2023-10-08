@@ -1,0 +1,21 @@
+body > footer {
+  grid-area: footer;
+  align-self: flex-end;
+
+  p {
+    font-family: 'DM Sans';
+    text-align: center;
+    color: var(--text-color);
+    padding: 0.8em 1em;
+
+    a {
+      &:visited {
+        color: var(--text-color);
+      }
+
+      &:hover {
+        text-decoration-style: wavy;
+      }
+    }
+  }
+}
