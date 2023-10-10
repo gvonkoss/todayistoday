@@ -8,7 +8,6 @@ body {
     '. footer .';
   grid-template-columns: 1fr 40ch 1fr;
   grid-template-rows: minmax(5ch, 20ch) 40ch auto;
-  gap: 1em;
 
   @include media.desktop {
     grid-template-columns: 1fr 65ch 1fr;

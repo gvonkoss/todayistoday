@@ -1,7 +1,6 @@
 @use 'utils' as media;
 
 div#card {
-  grid-area: content;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,8 +13,10 @@ div#card {
 
   &:after {
     content: 'today is today';
+    font-family: 'DM Sans';
+    font-size: smaller;
     position: absolute;
-    padding: 0.5em 1em;
+    padding: 0.75em 1em;
     bottom: 0;
     right: 0;
     border-left: 1px solid var(--text-color);
@@ -24,7 +25,7 @@ div#card {
 
   @include media.desktop {
     &:after {
-      padding: 0.75em 1em;
+      font-size: medium;
     }
   }
 }
