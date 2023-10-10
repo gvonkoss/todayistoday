@@ -3,11 +3,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Today is today.</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤔</text></svg>">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤔</text></svg>"
+    />
     <link rel="stylesheet" href="./index.scss" />
   </head>
   <body>
-        <label>
+    <label>
       <span id="switch">lights off</span>
       <input
         id="toggle"
@@ -18,23 +21,23 @@
         value="on"
       />
     </label>
-    <button id="snapshot">download</button>
-    <div id="card">
-      <blockquote>
-        <p id="quote"></p>
-        <footer id="stoic"></footer>
-      </blockquote>
-      <time>
-        <span id="day"></span>
-        <span class="date">
-          <span id="weekday"></span>
-          <span id="month"></span>
-          <span id="year"></span>
-        </span>
-      </time>
-    </div>
-    <div id="flash"/></div>
-
+    <main>
+      <div id="card">
+        <blockquote>
+          <p id="quote"></p>
+          <footer id="stoic"></footer>
+        </blockquote>
+        <time>
+          <span id="day"></span>
+          <span class="date">
+            <span id="weekday"></span>
+            <span id="month"></span>
+            <span id="year"></span>
+          </span>
+        </time>
+      </div>
+    </main>
+    <button id="download">Download</button>
     <button id="refresh">Refresh</button>
     <footer>
       <!-- <p>

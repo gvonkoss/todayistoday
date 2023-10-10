@@ -1,8 +1,7 @@
 import domtoimage from 'dom-to-image';
 
-const button = document.getElementById('snapshot');
+const button = document.getElementById('download');
 const card = document.getElementById('card');
-const flash = document.getElementById('flash');
 
 const blobToBase64 = (blob) => {
   return new Promise((resolve, _) => {
@@ -15,7 +14,7 @@ const blobToBase64 = (blob) => {
 button.addEventListener('click', () => {
   button.classList.toggle('snap');
   card.style.borderWidth = 0;
-  flash.style.zIndex = 1;
+  card.style.visibility = 'hidden';
 
   domtoimage
     .toBlob(card)
@@ -30,6 +29,6 @@ button.addEventListener('click', () => {
   setTimeout(() => {
     button.classList.toggle('snap');
     card.style.borderWidth = '1px';
-    flash.style.zIndex = '-1';
-  }, 150);
+    card.style.visibility = 'visible';
+  }, 170);
 });

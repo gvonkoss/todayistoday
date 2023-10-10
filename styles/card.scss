@@ -9,6 +9,8 @@ div#card {
   background-color: var(--card-color);
   color: var(--text-color);
   padding: 1em 1em 0.4em;
+  height: 100%;
+  width: 100%;
 
   &:after {
     content: 'today is today';
@@ -25,9 +27,4 @@ div#card {
       padding: 0.75em 1em;
     }
   }
-}
-
-div#flash {
-  grid-area: content;
-  background-color: var(--flash-color);
 }

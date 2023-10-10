@@ -1,4 +1,11 @@
-button#snapshot {
+div#flash {
+  grid-area: content;
+  background-color: var(--flash-color);
+  height: 100%;
+  width: 100%;
+}
+
+button#download {
   grid-area: controls;
   align-self: flex-end;
   justify-self: flex-start;
@@ -7,11 +14,11 @@ button#snapshot {
   cursor: pointer;
   color: transparent;
   width: 2em;
-  height: 2em;
+  height: 1em;
   background-color: var(--text-color);
   border: var(--border);
-  transform: translate(0.75em, 2em);
-  transition: transform 150ms cubic-bezier(0, 0.59, 0.98, 0.43);
+  transform: translate(0.75em, 1.2em);
+  transition: height 100ms cubic-bezier(0, 0.59, 0.98, 0.43);
 
   &:before {
     content: '↓';
@@ -24,7 +31,7 @@ button#snapshot {
   }
 
   &.snap {
-    background-color: var(--background-color);
-    transform: translate(0.75em, 2.5em);
+    background-color: var(--flash-color);
+    height: 0;
   }
 }
