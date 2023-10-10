@@ -18,7 +18,14 @@ input[type='checkbox'] {
   -moz-appearance: none;
   appearance: none;
   -webkit-tap-highlight-color: transparent;
-  position: relative;
+  display: flex;
+  cursor: pointer;
+  height: 80%;
+  transition: height cubic-bezier(1, -0.8, 0.23, 1.48) 500ms;
+
+  &:checked {
+    height: 60%;
+  }
 
   &:focus {
     outline: 0;
@@ -32,11 +39,8 @@ input[type='checkbox'] {
   &:before,
   &:after {
     content: '';
-    position: absolute;
-    transition-property: top, bottom;
-    transition-duration: 500ms;
-    transition-timing-function: cubic-bezier(1, -0.8, 0.23, 1.48);
-    bottom: 60px;
+    height: 100%;
+    display: block;
   }
 
   &:after {
@@ -44,18 +48,12 @@ input[type='checkbox'] {
     height: 12px;
     border-radius: 50%;
     background-color: var(--text-color);
+    align-self: flex-end;
   }
 
   &:before {
-    top: 0;
-    right: -7px;
-    border-right: 2px dotted var(--text-color);
-  }
-
-  &:checked {
-    &:after,
-    &:before {
-      bottom: 40px;
-    }
+    border-left: 2px dotted var(--text-color);
+    // (:after width / 2) + (:before border-width / 2) = 7px
+    transform: translate(7px);
   }
 }
