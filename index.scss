@@ -28,4 +28,10 @@ body {
   font-family: 'DM Serif Display';
   background-color: var(--background-color);
   overflow: hidden;
+
+  main {
+    grid-area: content;
+    background-color: (var(--flash-color));
+    display: flex;
+  }
 }
