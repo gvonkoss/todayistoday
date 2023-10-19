@@ -31,5 +31,8 @@ button.addEventListener('click', () => {
       card.style.borderWidth = '1px';
       flash.style.zIndex = '-1';
     }, 150);
+  } else {
+    card.style.borderWidth = '1px';
+    flash.style.zIndex = '-1';
   }
 });
