@@ -1,11 +1,16 @@
 @use './styles';
 
-:root {
-  --border: 1px solid var(--text-color);
-  --text-color: black;
+body {
+  --primary-color: gold;
+  --secondary-color: black;
   --background-colour: beige;
-  --card-colour: springgreen;
-  --flash-color: springgreen;
+  --border: 1px solid var(--secondary-color);
+
+  &.dark {
+    --primary-color: black;
+    --secondary-color: gold;
+    --background-color: black;
+  }
 }
 
 * {
@@ -18,7 +23,7 @@
   }
 
   &:focus-visible {
-    outline: 2px solid var(--text-color);
+    outline: 2px solid var(--secondary-color);
     outline-offset: 1px;
   }
 }

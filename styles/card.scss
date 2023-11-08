@@ -5,8 +5,8 @@ div#card {
   display: flex;
   flex-direction: column;
   border: var(--border);
-  background-color: var(--card-color);
-  color: var(--text-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 1em 1em 0.4em;
   height: 100%;
   width: 100%;
@@ -19,7 +19,7 @@ div#card {
     padding: 0.75em 1em;
     bottom: 0;
     right: 0;
-    border-left: 1px solid var(--text-color);
+    border-left: 1px solid var(--secondary-color);
     opacity: 0.8;
   }
 
