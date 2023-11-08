@@ -20,7 +20,7 @@ input[type='checkbox'] {
   -webkit-tap-highlight-color: transparent;
   display: flex;
   cursor: pointer;
-  touch-action: pan-down;
+  touch-action: pan-y;
 
   height: 80%;
   transition: height cubic-bezier(1, -0.8, 0.23, 1.48) 500ms;
