@@ -1,26 +1,23 @@
 @use 'utils' as media;
 @use 'sass:color';
 
-label {
+#light-switch {
   grid-area: controls;
   justify-self: flex-end;
   cursor: pointer;
-  touch-action: pan-y;
   display: flex;
 
-  span {
+  label {
     font-family: 'DM Sans', sans-serif;
+    cursor: inherit;
     color: var(--secondary-color);
   }
 }
 
 input[type='checkbox'] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  -webkit-tap-highlight-color: transparent;
   display: flex;
-  cursor: pointer;
+  cursor: inherit;
   touch-action: inherit;
 
   height: 80%;

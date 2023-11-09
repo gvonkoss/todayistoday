@@ -1,27 +1,29 @@
-const setDarkMode = (dark) => {
-  const body = document.body;
-  const state = document.getElementById('switch');
+function setDarkMode(...args) {
+  const [el, preset] = args;
 
+  const body = document.body;
+  const [label, checkbox] = this?.children ?? el.children;
+
+  checkbox.checked = preset ?? checkbox.checked;
   // setTimeout to match animation of light switch
   setTimeout(() => {
-    body.classList.toggle('dark', dark);
-    state.innerText = `lights ${dark ? 'on' : 'off'}`;
+    body.classList.toggle('dark', checkbox.checked);
+    label.textContent = `lights ${checkbox.checked ? 'on' : 'off'}`;
   }, 450);
-};
+}
 
 export const setTheme = () => {
-  const toggle = document.getElementById('toggle');
+  const lightSwitch = document.getElementById('light-switch');
 
-  toggle.addEventListener('change', ({ target }) =>
-    setDarkMode(target.checked)
-  );
+  lightSwitch.addEventListener('change', setDarkMode);
+  lightSwitch.addEventListener('pointerdown', setDarkMode);
 
   if (window.matchMedia) {
     const media = window.matchMedia('(prefers-color-scheme: dark)');
+    setDarkMode(lightSwitch, media.matches);
 
-    toggle.checked = media.matches;
-    setDarkMode(toggle.checked);
-
-    media.addEventListener('change', ({ matches }) => setDarkMode(matches));
+    media.addEventListener('change', ({ matches }) =>
+      setDarkMode(lightSwitch, matches)
+    );
   }
 };
