@@ -16,7 +16,6 @@ export const setTheme = () => {
   const lightSwitch = document.getElementById('light-switch');
 
   lightSwitch.addEventListener('change', setDarkMode);
-  lightSwitch.addEventListener('touchmove', setDarkMode);
 
   if (window.matchMedia) {
     const media = window.matchMedia('(prefers-color-scheme: dark)');
