@@ -1,4 +1,4 @@
-<html lang="pt-BR">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,17 +10,16 @@
     <link rel="stylesheet" href="./index.scss" />
   </head>
   <body>
-    <label>
-      <span id="switch">lights off</span>
+    <div id="light-switch">
+      <label for="switch">lights off</label>
       <input
-        id="toggle"
-        class="toggle"
+        id="switch"
         type="checkbox"
         role="switch"
-        name="toggle"
+        name="switch"
         value="on"
       />
-    </label>
+    </div>
     <main>
       <div id="flash"></div>
       <div id="card">
@@ -54,6 +53,5 @@
       </p>
     </footer>
     <script src="./index.js" type="module"></script>
-    <link rel="stylesheet" href="./styles/fonts.scss" />
   </body>
 </html>

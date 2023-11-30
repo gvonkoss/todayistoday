@@ -1,8 +1,10 @@
 import { buildQuote, buildDate, setTheme, refreshQuote } from './src';
 
 (() => {
-  setTheme();
-  buildDate();
+  document.addEventListener('DOMContentLoaded', () => {
+    setTheme();
+    buildDate();
+    buildQuote();
+  });
   refreshQuote();
-  buildQuote();
 })();

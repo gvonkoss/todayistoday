@@ -1,4 +1,12 @@
 @mixin desktop {
+  /**
+  
+  both the parcel/transformer-sass and sass packages convert 
+  min-width: 430px to width <=430px, which all browsers except safari seem to understand.
+  window—found through window.matchMedia('(width >= 430px)') being false on safari, true for ff and chrome.
+  weird.
+  
+  */
   @media screen and (min-width: 430px) {
     @content;
   }

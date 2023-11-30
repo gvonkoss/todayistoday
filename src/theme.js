@@ -1,41 +1,28 @@
-import { random } from './utils';
+function setDarkMode(...args) {
+  const [el, preset] = args;
 
-const colors = ['hotpink', 'turquoise', 'gold', 'deepskyblue', 'springgreen'];
-const color = colors[random(colors.length)];
+  const body = document.body;
+  const [label, checkbox] = this?.children ?? el.children;
 
-const setDarkMode = (on) => {
-  const styles = document.documentElement.style;
-  const state = document.getElementById('switch');
-
+  checkbox.checked = preset ?? checkbox.checked;
+  // setTimeout to match animation of light switch
   setTimeout(() => {
-    if (on) {
-      state.innerText = 'lights on';
-      styles.setProperty('--flash-color', color);
-      styles.setProperty('--text-color', color);
-      styles.setProperty('--card-color', 'black');
-      styles.setProperty('--background-color', 'black');
-    } else {
-      state.innerText = 'lights off';
-      styles.setProperty('--flash-color', 'black');
-      styles.setProperty('--text-color', 'black');
-      styles.setProperty('--card-color', color);
-      styles.setProperty('--background-color', 'beige');
-    }
+    body.classList.toggle('dark', checkbox.checked);
+    label.textContent = `lights ${checkbox.checked ? 'on' : 'off'}`;
   }, 450);
-};
+}
 
 export const setTheme = () => {
-  const [toggle] = document.getElementsByTagName('input');
+  const lightSwitch = document.getElementById('light-switch');
 
-  toggle.addEventListener('change', ({ target }) =>
-    setDarkMode(target.checked)
-  );
+  lightSwitch.addEventListener('change', setDarkMode);
 
   if (window.matchMedia) {
     const media = window.matchMedia('(prefers-color-scheme: dark)');
-    toggle.checked = media.matches;
-    setDarkMode(toggle.checked);
+    setDarkMode(lightSwitch, media.matches);
 
-    media.addEventListener('change', ({ matches }) => setDarkMode(matches));
+    media.addEventListener('change', ({ matches }) =>
+      setDarkMode(lightSwitch, matches)
+    );
   }
 };
